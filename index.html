@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Classic Towns of Greater Philadelphia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <style>
+      body {
+        font: 16px/1.5 Georgia, "Times New Roman", Times, serif;
+        margin: 0;
+        color: #2a211f;
+      }
+      a {
+        color: inherit;
+      }
+      .container {
+        background: url(img/city.png) bottom center no-repeat,
+          linear-gradient(
+            0deg,
+            rgba(237, 184, 148, 1) 0%,
+            rgba(252, 237, 200, 1) 30%,
+            rgba(252, 237, 200, 1) 60%,
+            rgba(198, 247, 237, 1) 100%
+          );
+        text-align: center;
+        padding-bottom: 280px;
+        padding-top: 74px;
+      }
+      main,
+      footer > .row {
+        max-width: calc(246px + 80ch);
+        margin: 0 auto;
+        justify-content: center;
+      }
+      h1 {
+        margin: 0;
+      }
+      h2 {
+        color: #ab4024;
+        font-size: 1.75em;
+        font-weight: normal;
+        line-height: 1.2;
+      }
+      .lead,
+      .divider {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-style: italic;
+        font-size: 1.125em;
+      }
+      .lead::before,
+      .lead::after {
+        content: "";
+        min-width: 67px;
+        min-height: 67px;
+        background: url(img/arrow.svg) no-repeat center;
+        background-size: contain;
+        display: block;
+        margin: 0 28px;
+      }
+      .lead::after {
+        transform: rotate(180deg);
+      }
+      .divider {
+        margin: 1em 0;
+      }
+      .divider::before,
+      .divider::after {
+        content: "";
+        background: linear-gradient(
+          270deg,
+          rgba(177, 90, 53, 1) 0%,
+          rgba(177, 90, 53, 1) 50%,
+          rgba(177, 90, 53, 0) 100%
+        );
+        height: 1px;
+        flex: 1;
+        margin: 0 28px;
+      }
+      .divider::after {
+        background: linear-gradient(
+          90deg,
+          rgba(177, 90, 53, 1) 0%,
+          rgba(177, 90, 53, 1) 50%,
+          rgba(177, 90, 53, 0) 100%
+        );
+      }
+      .row {
+        margin: 1em 0;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+      }
+      .row > * {
+        flex: 1;
+        max-width: 80ch;
+        margin: 1em;
+      }
+      .item {
+        display: block;
+        text-decoration: none;
+        border-radius: 12px;
+        padding: 0 10px;
+      }
+      .item:hover,
+      .item:focus {
+        background: rgba(255, 255, 255, 0.3);
+      }
+      .item > figure {
+        min-height: 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      h3 {
+        color: #54737f;
+        font-weight: bold;
+        font-size: 1.125em;
+        margin: 0 0 0.5em 0;
+      }
+      .connect img {
+        height: 18px;
+        padding: 0 8px;
+        border-right: 1px solid #54737f;
+      }
+      .connect > div {
+        display: flex;
+      }
+      .connect a {
+        line-height: 0;
+        display: block;
+      }
+      footer {
+        background: #3d3231;
+        color: #fff;
+        font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      footer .row > * {
+        flex: auto;
+        margin: 1.5em 1em;
+      }
+      footer .footer-logo {
+        text-align: right;
+        border-right: 1px solid #fff;
+        padding-right: 28px;
+        font-style: italic;
+        margin: 1.5em 10px 1.5em 1em;
+      }
+      .footer-logo img {
+        margin-top: 1em;
+      }
+      @media (max-width: 639px) {
+        .row {
+          flex-direction: column;
+          align-items: center;
+        }
+        .lead::before,
+        .lead::after {
+          display: none;
+        }
+        footer .row {
+          align-items: stretch;
+          text-align: center;
+        }
+        .footer-logo {
+          text-align: center;
+          border-right: none;
+          padding-right: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <h1>
+          <img
+            src="img/classictowns.png"
+            alt="Classic Towns of Greater Philadelphia"
+          />
+        </h1>
+        <h2>
+          Thanks for your interest in the<br />Classic Towns of Greater
+          Philadelphia!
+        </h2>
+        <p class="lead">
+          The sun has set on the community marketing program, but the work that
+          goes into creating livable communities continues. Learn more about
+          what DVRPC is doing to support these great places we call home.
+        </p>
+        <div class="divider"><img src="img/dvrpc.png" alt="DVRPC" /></div>
+        <div class="row">
+          <a
+            href="https://signup.e2ma.net/signup/1808352/1403728/"
+            class="item"
+            target="_blank"
+            rel="noopener"
+          >
+            <figure><img src="img/mail.svg" alt="email" height="35" /></figure>
+            <p>
+              Stay informed about DVRPC’s upcoming events, new studies, ongoing
+              programs, and more by
+              <strong>subscribing to our email lists.</strong>
+            </p>
+          </a>
+          <a
+            href="https://www.dvrpc.org/Connections2045/MIT/"
+            class="item"
+            target="_blank"
+            rel="noopener"
+          >
+            <figure>
+              <img src="img/box.svg" alt="toolbox icon" height="37" />
+            </figure>
+            <p>
+              Most big ideas get implemented on the local level. Read what we’re
+              recommending to municipalities by visiting the
+              <strong>Municipal Implementation Toolbox.</strong>
+            </p>
+          </a>
+          <a
+            href="https://www.dvrpc.org/Planning/"
+            class="item"
+            target="_blank"
+            rel="noopener"
+          >
+            <figure>
+              <img src="img/building.svg" alt="city hall icon" height="57" />
+            </figure>
+            <p>
+              Municipalities have a strong role in creating and maintaining the
+              places we call home. Learn about the different ways
+              <strong
+                >DVRPC works with Greater Philadelphia’s 352
+                municipalities.</strong
+              >
+            </p>
+          </a>
+        </div>
+        <div class="row">
+          <a
+            href="https://www.dvrpc.org/Connections2045/"
+            class="item"
+            target="_blank"
+            rel="noopener"
+          >
+            <figure>
+              <img
+                src="img/connections.png"
+                alt="Connections 2045"
+                height="64"
+              />
+            </figure>
+            <p>
+              DVRPC helps elected officials prioritize transportation
+              investments to make today in order to
+              <strong>prepare the region for the future.</strong> Find out more.
+            </p>
+          </a>
+          <div class="item">
+            <figure class="connect">
+              <h3>Connect With Us!</h3>
+              <div>
+                <a
+                  href="https://www.facebook.com/DVRPC"
+                  target="_blank"
+                  rel="noopener"
+                  ><img src="img/facebook.svg" alt="Facebook"/></a
+                ><a
+                  href="https://www.twitter.com/DVRPC"
+                  target="_blank"
+                  rel="noopener"
+                  ><img src="img/twitter.svg" alt="Twitter"/></a
+                ><a
+                  href="https://www.instagram.com/DVRPC"
+                  target="_blank"
+                  rel="noopener"
+                  ><img src="img/instagram.svg" alt="Instagram"/></a
+                ><a
+                  href="https://www.linkedin.com/company/delaware-valley-regional-planning-commission"
+                  rel="noopener"
+                  target="_blank"
+                  ><img src="img/linkedin.svg" alt="LinkedIn"/></a
+                ><a
+                  href="https://www.youtube.com/channel/UCEU8UI5_iGkVypHP93b5jLA"
+                  rel="noopener"
+                  target="_blank"
+                  ><img src="img/youtube.svg" alt="YouTube" style="border: none"
+                /></a>
+              </div>
+            </figure>
+            <p>
+              Get real-time updates on what DVRPC is doing throughout the
+              region.
+            </p>
+          </div>
+          <a
+            href="https://www.dvrpc.org/ClassicTowns/"
+            target="_blank"
+            rel="noopener"
+            class="item"
+          >
+            <figure>
+              <img src="img/bird.svg" alt="bird icon" height="35" />
+            </figure>
+            <p>
+              Interested in what the Classic Towns program was all about?
+              <strong>See a recap of the program here.</strong>
+            </p>
+          </a>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="row">
+        <div class="footer-logo">
+          A program of<br/>
+          <a href="https://www.dvrpc.org/" rel="noopener" target="_blank"
+            ><img src="img/dvrpc_white.png" alt="DVRPC"
+          /></a>
+        </div>
+        <div>
+          190 N Independence Mall West, 8th Floor,<br />Philadelphia, PA
+          19106-1520 <br />215.592.1800 |
+          <a href="mailto:public_affairs@dvrpc.org">public_affairs@dvrpc.org</a>
+          |
+          <a
+            href="https://www.dvrpc.org/Policies/"
+            target="_blank"
+            rel="noopener"
+            >DVRPC Policies</a
+          >
+          <br />© Delaware Valley Regional Planning Commission
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
