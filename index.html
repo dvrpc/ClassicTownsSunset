@@ -4,6 +4,9 @@
     <title>Classic Towns of Greater Philadelphia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
+    <meta name="description" content="The sun has set on the community marketing program, but the work that goes into creating livable communities continues. Learn more about what DVRPC is doing."/>
+    <meta name="theme-color" content="#edb894"/>
+    <link rel="manifest" href="manifest.json" />
     <style>
       body {
         font: 16px/1.5 Georgia, "Times New Roman", Times, serif;
@@ -30,6 +33,7 @@
       footer > .row {
         max-width: calc(246px + 80ch);
         margin: 0 auto;
+        padding: 0 10px;
         justify-content: center;
       }
       h1 {
@@ -173,6 +177,11 @@
         }
       }
     </style>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service-worker.js");
+      }
+    </script>
   </head>
   <body>
     <div class="container">
@@ -318,7 +327,7 @@
     <footer>
       <div class="row">
         <div class="footer-logo">
-          A program of<br/>
+          A program of<br />
           <a href="https://www.dvrpc.org/" rel="noopener" target="_blank"
             ><img src="img/dvrpc_white.png" alt="DVRPC"
           /></a>
